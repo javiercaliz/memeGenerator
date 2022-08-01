@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Javi's Meme Generator</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>Javi's Meme Generator</h1>
+        <div class="grid">
+            <div id="parameters">
+                <form id="form">
+                    <label for="">
+                        Image's Url
+                        <input type="text" name="imageUrl" id="imageUrl" placeholder="Image's Url"
+                            onchange="addImage()">
+                    </label>
+                    <label for="">
+                        Top Text
+                        <input type="text" name="topText" id="topText" placeholder="Top Text" onkeyup="addText()">
+                    </label>
+                    <label for="range">Top Text Size
+                        <input type="range" min="16" max="70" value="43" id="topTextSize" name="topTextSize"
+                            onchange="adjustTextSize(value, 'text1')">
+                    </label>
+                    <label for="">
+                        Bottom Text
+                        <input type="text" name="bottomText" id="bottomText" placeholder="Bottom Text"
+                            onkeyup="addText()">
+                    </label>
+                    <label for="range">Top Text Size
+                        <input type="range" min="16" max="70" value="43" id="bottomTextSize" name="bottomTextSize"
+                            onchange="adjustTextSize(value, 'text2')">
+                    </label>
+                    <!-- <button type="button" id="generateButton" >Copy!</button> -->
+
+                </form>
+            </div>
+            <div id="result" class="container">
+                <article id="meme">
+                    <header id="text1">Hola</header>
+                    <footer id="text2">Chau</footer>
+                </article>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="footer" style="text-align: end; padding-right: 30px;">
+        Javier Caliz - 2022 - <a href="https://github.com/javiercaliz"><i class="fa fa-github fa-2x"
+                aria-hidden="true"></i> GitHub</a>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

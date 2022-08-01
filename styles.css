@@ -1,0 +1,49 @@
+#meme {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+article>footer, article>header {
+    padding: 15px;
+    height: 20%;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#parameters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#result {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#text1, #text2 {
+    font-size: 50px;
+    overflow-wrap: anywhere;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.footer {
+    padding: 0%;
+}
+
